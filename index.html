@@ -4,44 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slate Studio - Web Design for Local Businesses</title>
-
-
-    <meta name="description"
-        content="Professional web design for local businesses in Ireland. Custom websites from €499. Serving Dublin, Waterford & Wexford. Fast, mobile-friendly, SEO-optimized.">
-    <meta name="keywords"
-        content="web design Dublin, web design Waterford, web design Wexford, website development Ireland, local business websites, affordable web design Ireland">
-    <meta name="author" content="ByLund Studio">
-
     
+    <!-- Primary SEO -->
+    <title>Web Design for Local Businesses | Ireland & UK | ByLund Studio</title>
+    <meta name="description" content="Professional web design for local businesses in Ireland & UK. Custom websites from €499/£449. Serving Dublin, Waterford, Wexford, Manchester & London. Fast, mobile-friendly, SEO-optimized.">
+    <meta name="keywords" content="web design Dublin, web design Manchester, web design London, website for small business, affordable web design Ireland, web design UK, local business website, website development Ireland, website development UK, web designer near me">
+    <meta name="author" content="ByLund Studio">
+    
+    <!-- Geo Tags (primary location) -->
     <meta name="geo.region" content="IE">
     <meta name="geo.placename" content="Ireland">
-
-    <link rel="canonical" href="https://bylund.studio/">
-
     
+    <!-- Canonical -->
+    <link rel="canonical" href="https://bylund.studio/">
+    
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bylund.studio/">
-    <meta property="og:title" content="ByLund Studio | Web Design in Dublin, Waterford & Wexford">
-    <meta property="og:description"
-        content="Professional web design for local businesses in Ireland. Custom websites from €499.">
+    <meta property="og:title" content="ByLund Studio | Web Design Ireland & UK">
+    <meta property="og:description" content="Professional web design for local businesses. Custom websites from €499/£449. Dublin, Manchester, London & more.">
     <meta property="og:image" content="https://bylund.studio/images/og-image.webp">
     <meta property="og:locale" content="en_IE">
-
+    <meta property="og:locale:alternate" content="en_GB">
     
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="ByLund Studio | Web Design Ireland">
-    <meta name="twitter:description"
-        content="Professional web design for local businesses in Dublin, Waterford & Wexford.">
+    <meta name="twitter:title" content="ByLund Studio | Web Design Ireland & UK">
+    <meta name="twitter:description" content="Professional web design for local businesses in Ireland & UK.">
     <meta name="twitter:image" content="https://bylund.studio/images/og-image.webp">
-
     
+    <!-- Schema.org -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
         "name": "ByLund Studio",
-        "description": "Professional web design and development for local businesses in Ireland",
+        "description": "Professional web design and development for local businesses in Ireland and UK",
         "url": "https://bylund.studio",
         "email": "bylundstudio@gmail.com",
         "areaServed": [
@@ -68,16 +66,38 @@
                     "@type": "Country",
                     "name": "Ireland"
                 }
+            },
+            {
+                "@type": "City",
+                "name": "Manchester",
+                "containedInPlace": {
+                    "@type": "Country",
+                    "name": "United Kingdom"
+                }
+            },
+            {
+                "@type": "City",
+                "name": "London",
+                "containedInPlace": {
+                    "@type": "Country",
+                    "name": "United Kingdom"
+                }
+            },
+            {
+                "@type": "City",
+                "name": "Birmingham",
+                "containedInPlace": {
+                    "@type": "Country",
+                    "name": "United Kingdom"
+                }
             }
         ],
         "priceRange": "€€",
-        "serviceType": ["Web Design", "Web Development", "SEO"],
+        "serviceType": ["Web Design", "Web Development", "SEO", "Website Redesign"],
         "knowsLanguage": ["English"]
     }
-
     </script>
-
-
+    
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -97,7 +117,7 @@
             <span></span>
         </button>
 
-        <nav>
+        <nav id="nav">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -148,7 +168,7 @@
 
             <div class="hero-image">
                 <div class="image-frame">
-                    <img src="images/studio (1).webp" alt="Picture of the Studio" class="code-image">
+                    <img src="images/studio-(1).webp" alt="Picture of the Studio" class="code-image" loading="lazy">
                     <div class="performance-card">
                         <p class="performance-label">Website Speed</p>
                         <h3 class="performance-value">3x Faster</h3>
@@ -162,7 +182,7 @@
         <section class="about-us" id="about">
             <div class="about-image">
                 <div class="abimage-frame">
-                    <img src="images/apple laptop.webp" alt="Picture of the equipment" class="studio-image">
+                    <img src="images/apple-laptop.webp" alt="Picture of the equipment" class="studio-image"loading="lazy">
                 </div>
             </div>
 
@@ -568,7 +588,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-spacer"></div>
-            <p>&copy; 2026 Slate Studio. All rights reserved.</p>
+            <p>&copy; 2026 byLund Studio. All rights reserved.</p>
             <div class="social-links">
                 <a href="https://www.instagram.com/bylund_studio/" target="_blank" aria-label="Instagram">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -703,5 +723,6 @@ document.addEventListener('DOMContentLoaded', function() {
     </script>
 
 </body>
+
 
 </html>
