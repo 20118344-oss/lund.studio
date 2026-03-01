@@ -1687,6 +1687,109 @@ section {
     z-index: 999;
 }
 
+
+
+
+
 .overlay.active {
     display: block;
+
+}
+
+
+
+
+
+/* ========== TABLET FIX (iPad) ========== */
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+    /* About image */
+    .about-us img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        aspect-ratio: 4/3;
+    }
+    
+    /* Services cards */
+    .services-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .service-card:nth-child(3) {
+        grid-column: 1 / -1;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    /* Business hours */
+    .hours-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    
+    .hours-row span {
+        white-space: nowrap;
+    }
+}
+
+/* ========== MOBILE FIX ========== */
+@media (max-width: 768px) {
+    
+    /* Hero order */
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hero-content {
+        order: 1;
+    }
+    
+    .hero-image {
+        order: 2;
+        margin: 30px 0;
+        width: 100%;
+    }
+    
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+    
+    .stats {
+        order: 3;
+    }
+    
+    /* Contact form centering */
+    .contact-content {
+        padding: 0 15px;
+    }
+    
+    .contact-form {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    /* Business hours */
+    .hours-row {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .hours-row span {
+        white-space: nowrap;
+    }
+    
+    /* Images */
+    .about-us img,
+    .hero-image img {
+        max-width: 100%;
+        height: auto;
+    }
 }
