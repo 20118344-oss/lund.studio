@@ -1901,8 +1901,39 @@ section {
         margin: 0 auto;
     }
 
+    /* Business hours fix */
+.business-hours {
+    padding: 20px;
+}
+
+.business-hours h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.hours-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.hours-row span:first-child {
+    flex: 1;
+    text-align: left;
+}
+
+.hours-row span:last-child {
+    flex: 1;
+    text-align: right;
+}
+
+
+
+    
     
 }
+
 
 
 
