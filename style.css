@@ -1891,11 +1891,20 @@ section {
         object-fit: cover;
     }
     
+    .contact-form {
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+    }
     
+    .contact-content {
+        padding: 0 15px;
+    }
     
     
     
     
     }
 }
+
 
