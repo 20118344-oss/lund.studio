@@ -1891,10 +1891,19 @@ section {
     height: 100%;
     object-fit: cover;
 }
-    
+      /* Contact form centering */
+    .contact-content {
+        padding: 0 15px;
+    }
+
+    .contact-form {
+        width: 100%;
+        margin: 0 auto;
+    }
 
     
 }
+
 
 
 
