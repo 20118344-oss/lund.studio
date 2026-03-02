@@ -1891,14 +1891,24 @@ section {
         object-fit: cover;
     }
     
+    /* Contact form centering */
+    .contact-content {
+        padding: 0 15px;
+    }
+    
     .contact-form {
         width: 100%;
         margin: 0 auto;
-        padding: 20px;
     }
     
-    .contact-content {
-        padding: 0 15px;
+    /* Business hours */
+    .hours-row {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .hours-row span {
+        white-space: nowrap;
     }
     
     
@@ -1906,5 +1916,6 @@ section {
     
     }
 }
+
 
 
