@@ -1075,101 +1075,83 @@ footer {
 
 
 
-.portfolio {
-    padding: 60px 300px;
-    background-color: #f8f9fa;
-    min-height: 60vh;
-}
-
-.portfolio-header {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.portfolio-header h1 {
-    font-size: 16px;
-    font-weight: 700;
-    color: #666;
-    line-height: 1.2;
-    margin-bottom: 10px;
-}
-
-.portfolio-header h2 {
-    font-size: 24px;
-    font-weight: 700;
-    color: #1a1a2e;
-    line-height: 1.2;
-    margin-bottom: 10px;
-}
-
-.portfolio-header p {
-    font-size: 16px;
-    color: #666;
-    max-width: 600px;
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 24px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
-
-.portfolio-coming-soon {
+.portfolio-card {
     background: #fff;
-    padding: 80px 60px;
-    border-radius: 20px;
-    text-align: center;
+    border-radius: 16px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
     box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    max-width: 600px;
-    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
 }
 
-.coming-soon-icon {
-    width: 100px;
-    height: 100px;
-    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 30px auto;
-    animation: pulse 2s ease-in-out infinite;
+.portfolio-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.12);
 }
 
-.coming-soon-icon svg {
-    width: 50px;
-    height: 50px;
-    stroke: #fff;
-    stroke-width: 2;
-    fill: none;
+.portfolio-card-image {
+    width: 100%;
+    aspect-ratio: 16/10;
+    overflow: hidden;
 }
 
-@keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.4);
-    }
-    50% {
-        transform: scale(1.05);
-        box-shadow: 0 0 0 20px rgba(0, 123, 255, 0);
-    }
+.portfolio-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
 }
 
-.portfolio-coming-soon h3 {
-    font-size: 28px;
+.portfolio-card:hover .portfolio-card-image img {
+    transform: scale(1.05);
+}
+
+.portfolio-card-info {
+    padding: 24px;
+}
+
+.portfolio-card-tag {
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+}
+
+.portfolio-card-info h3 {
+    font-size: 20px;
     font-weight: 700;
     color: #1a1a2e;
-    margin-bottom: 16px;
+    margin: 6px 0 10px;
 }
 
-.portfolio-coming-soon p {
-    font-size: 16px;
+.portfolio-card-info p {
+    font-size: 14px;
     color: #666;
-    line-height: 1.7;
-    margin-bottom: 32px;
+    line-height: 1.6;
+    margin: 0 0 16px;
 }
 
-.portfolio-coming-soon .btn-primary {
+.portfolio-card-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a2e;
     display: inline-flex;
     align-items: center;
-    gap: 10px;
-    padding: 16px 32px;
+    gap: 6px;
+    transition: color 0.3s ease;
+}
+
+.portfolio-card:hover .portfolio-card-link {
+    color: #007bff;
 }
 
 
